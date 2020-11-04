@@ -10,6 +10,8 @@
     --services-text-color: #fff;
     --services-box-bg-color: #14181a;
     --services-color-icon: #dc143c;
+    --services-border-color: #cfcece;
+    --services-border-hover-color: #dc143c;
     --contact-text-color: #030303;
     --contact-border-color: #868686;
     --download-text-color: #030303;
@@ -25,15 +27,12 @@
     --team-text-color: #030303;
     --team-bg-color: #fff;
     --team-box-bg-color: #fff;
-    --team-border-color: #868686;
+    --team-border-color: #cfcece;
+    --team-border-hover-color: #dc143c;
     --team-icon-color: #dc143c;
     --team-image-border-color: #868686;
     --footer-bg-color: #030303;
     --footer-text-color: #fff;
-}
-
-.inputFocus {
-    border: 1px solid red;
 }
 
 * {
@@ -49,6 +48,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 }
 
 
@@ -101,6 +101,9 @@ section {
     color: var(--header-nav-color);
 }
 
+
+/* Main text*/
+
 .main__text__container {
     width: 90%;
     height: auto;
@@ -108,7 +111,7 @@ section {
     position: absolute;
     z-index: 1;
     left: 50%;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: flex-end;
@@ -133,10 +136,16 @@ section {
     font-family: var(--secondary-font);
 }
 
+
+/* Content */
+
 main {
     width: 100%;
     min-height: 100vh;
 }
+
+
+/* Services */
 
 .services {
     display: block;
@@ -210,6 +219,33 @@ main {
     font-family: var(--secondary-font);
     text-transform: uppercase;
     color: var(--services-text-color);
+    border-bottom: 5px solid var(--services-border-color);
+    position: relative;
+}
+
+.services__box__title h2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+.services__box__title h2:hover::after {
+    background-color: var(--services-border-hover-color);
+    width: 100%;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
 }
 
 .services__box__text p {
@@ -236,6 +272,9 @@ main {
     -o-border-radius: 3px;
     cursor: pointer;
 }
+
+
+/* Contact */
 
 .contact {
     display: block;
@@ -382,6 +421,9 @@ main {
     cursor: pointer;
 }
 
+
+/* Download */
+
 .download {
     display: block;
     width: 100%;
@@ -460,6 +502,9 @@ main {
     -o-transition: 0.4s;
     border: none;
 }
+
+
+/* Team */
 
 .team {
     display: block;
@@ -542,6 +587,33 @@ main {
     font-family: var(--secondary-font);
     text-transform: uppercase;
     color: var(--team-text-color);
+    border-bottom: 5px solid var(--team-border-color);
+    position: relative;
+}
+
+.team__box__title h2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+.team__box__title h2:hover::after {
+    background-color: var(--team-border-hover-color);
+    width: 100%;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
 }
 
 .team__box__subtitle h3 {
@@ -566,6 +638,9 @@ main {
     font-size: 27px;
     color: var(--team-icon-color);
 }
+
+
+/* Footer */
 
 footer {
     display: block;
@@ -617,6 +692,28 @@ footer {
 /* mobile devices */
 
 @media only screen and (max-width: 600px) {
+    .header__container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .header__logo {
+        padding: 20px;
+    }
+    nav {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    .header__nav__items {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .header__nav__items li {
+        margin: 0;
+    }
+    .main__text__container {
+        margin: 100px 0 0 0;
+    }
     .main__text h2 {
         font-size: 3rem;
         line-height: 1;
@@ -625,12 +722,21 @@ footer {
     .main__text h3 {
         font-size: 1.5rem;
     }
+    .services__container,
+    .contact__container {
+        width: 100%;
+    }
     .services__boxes,
     .contact__boxes,
     .download__active__btn,
     .team_boxes,
     .footer__container {
         flex-direction: column;
+    }
+    .services__boxes,
+    .contact__boxes,
+    .team__boxes {
+        width: 100%;
     }
     .contact__box2 {
         border: none;

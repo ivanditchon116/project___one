@@ -14,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <script src="assets/js/script.js"></script>
 </head>
 
 <body>
@@ -30,13 +29,13 @@
                             <a href="#">home</a>
                         </li>
                         <li>
-                            <a href="#">services</a>
+                            <a href="#services">services</a>
                         </li>
                         <li>
-                            <a href="#">contact us</a>
+                            <a href="#contact">contact us</a>
                         </li>
                         <li>
-                            <a href="#">team</a>
+                            <a href="#team">team</a>
                         </li>
                     </ul>
                 </nav>
@@ -53,27 +52,13 @@
 
     <main>
         <!-- Services -->
-        <div class="services">
+        <div class="services" id="services">
             <div class="services__container">
                 <div class="services__title">
                     <h2>services</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                 </div>
                 <div class="services__boxes">
-                    <div class="services__box">
-                        <div class="services__box__icon">
-                            <i class="fas fa-pen-alt"></i>
-                        </div>
-                        <div class="services__box__title">
-                            <h2>web design</h2>
-                        </div>
-                        <div class="services__box__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                        </div>
-                        <div class="services__box__active__btn">
-                            <button>read more</button>
-                        </div>
-                    </div>
                     <div class="services__box">
                         <div class="services__box__icon">
                             <i class="fas fa-database"></i>
@@ -90,10 +75,24 @@
                     </div>
                     <div class="services__box">
                         <div class="services__box__icon">
-                            <i class="fas fa-shield-check"></i>
+                            <i class="far fa-code"></i>
                         </div>
                         <div class="services__box__title">
-                            <h2>security</h2>
+                            <h2>clean code</h2>
+                        </div>
+                        <div class="services__box__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        </div>
+                        <div class="services__box__active__btn">
+                            <button>read more</button>
+                        </div>
+                    </div>
+                    <div class="services__box">
+                        <div class="services__box__icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="services__box__title">
+                            <h2>responsive design</h2>
                         </div>
                         <div class="services__box__text">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
@@ -106,7 +105,7 @@
             </div>
         </div>
         <!-- Contact -->
-        <div class="contact">
+        <div class="contact" id="contact">
             <div class="contact__container">
                 <div class="contact__title">
                     <h2>contact</h2>
@@ -169,7 +168,7 @@
             </div>
         </div>
         <!-- Donwload -->
-        <div class="download ">
+        <div class="download" id="download">
             <div class="download__container ">
                 <div class="download__title ">
                     <h2>download</h2>
@@ -182,7 +181,7 @@
             </div>
         </div>
         <!-- Team -->
-        <div class="team ">
+        <div class="team" id="team">
             <div class="team__container ">
                 <div class="team__title ">
                     <h2>team</h2>
@@ -331,6 +330,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
