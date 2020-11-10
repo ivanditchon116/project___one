@@ -319,8 +319,7 @@ main {
 }
 
 .contact__box1,
-.contact__box2,
-.contact__box3 {
+.contact__box2 {
     flex: 1;
     padding: 15px 20px;
 }
@@ -329,7 +328,7 @@ main {
 .contact__phone,
 .contact__email {
     display: flex;
-    margin: 30px 0;
+    margin: 0 0 40px 0;
 }
 
 .contact__address__icon,
@@ -371,14 +370,14 @@ main {
 .contact__user__message {
     display: flex;
     flex-direction: column;
-    margin: 30px 0;
+    margin: 15px 0;
 }
 
 .contact__user__name label,
 .contact__user__phone label,
 .contact__user__email label,
 .contact__user__message label {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: var(--secondary-font);
     font-weight: 500;
     text-transform: capitalize;
@@ -388,7 +387,7 @@ main {
 .contact__user__phone input,
 .contact__user__email input,
 .contact__user__message textarea {
-    padding: 15px;
+    padding: 10px;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
