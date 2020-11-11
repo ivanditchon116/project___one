@@ -561,7 +561,12 @@ main {
     box-shadow: 0 0 10px var(--team-border-color);
 }
 
-.team__box__icon,
+.team__box1__image,
+.team__box2__image,
+.team__box3__image,
+.team__box4__image,
+.team__box5__image,
+.team__box6__image,
 .team__box__title,
 .team__box__text,
 .team__box__icon,
@@ -571,8 +576,15 @@ main {
     padding: 20px 0;
 }
 
-.team__box__icon img {
-    width: 40%;
+.team__box1__image img,
+.team__box2__image img,
+.team__box3__image img,
+.team__box4__image img,
+.team__box5__image img,
+.team__box6__image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 100%;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
