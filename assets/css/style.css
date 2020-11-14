@@ -14,6 +14,7 @@
     --services-border-hover-color: #dc143c;
     --contact-text-color: #030303;
     --contact-border-color: #868686;
+    --contact-input-border-color: #dc143c;
     --download-text-color: #030303;
     --section-2-container-bg-color: #fff;
     --footer-bg-color: #030303;
@@ -370,17 +371,29 @@ main {
 .contact__user__message {
     display: flex;
     flex-direction: column;
-    margin: 15px 0;
+    margin: 0 0 30px 0;
+    position: relative;
 }
 
 .contact__user__name label,
 .contact__user__phone label,
-.contact__user__email label,
-.contact__user__message label {
-    font-size: 1rem;
+.contact__user__email label {
+    font-size: 13px;
     font-family: var(--secondary-font);
-    font-weight: 500;
+    font-weight: 400;
     text-transform: capitalize;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.contact__user__message label {
+    font-size: 13px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    text-transform: capitalize;
+    position: absolute;
+    top: 0;
 }
 
 .contact__user__name input,
@@ -388,13 +401,39 @@ main {
 .contact__user__email input,
 .contact__user__message textarea {
     padding: 10px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border: 1px solid var(--contact-border-color);
+    border:none;
+    border-bottom: 1px solid var(--contact-border-color);
     outline: none;
+}
+
+.contact__user__name input:focus,
+.contact__user__phone input:focus,
+.contact__user__email input:focus,
+.contact__user__message textarea:focus {
+    border-bottom: 2px solid var(--contact-input-border-color);
+    outline: none;
+}
+
+.contact__user__name input:focus + label,
+.contact__user__phone input:focus + label,
+.contact__user__email input:focus + label {
+    top: -20%;
+    font-weight: 500;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.contact__user__message textarea:focus + label {
+    top: -10%;
+    font-weight: 500;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 .contact__user__active__btn {
