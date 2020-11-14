@@ -436,6 +436,28 @@ main {
     -o-transition: 0.5s;
 }
 
+.contact__user__name input:valid + label,
+.contact__user__phone input:valid + label,
+.contact__user__email input:valid + label {
+    top: -20%;
+    font-weight: 500;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.contact__user__message textarea:valid + label {
+    top: -10%;
+    font-weight: 500;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
 .contact__user__active__btn {
     display: flex;
     justify-content: center;
