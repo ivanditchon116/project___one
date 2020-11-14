@@ -216,7 +216,7 @@ main {
 }
 
 .services__box__title h2 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-family: var(--secondary-font);
     text-transform: uppercase;
     color: var(--services-text-color);
@@ -378,7 +378,7 @@ main {
 .contact__user__name label,
 .contact__user__phone label,
 .contact__user__email label {
-    font-size: 13px;
+    font-size: 18px;
     font-family: var(--secondary-font);
     font-weight: 400;
     text-transform: capitalize;
@@ -388,7 +388,7 @@ main {
 }
 
 .contact__user__message label {
-    font-size: 13px;
+    font-size: 18px;
     font-family: var(--secondary-font);
     font-weight: 400;
     text-transform: capitalize;
@@ -689,7 +689,7 @@ main {
 }
 
 .team__box__subtitle h3 {
-    font-size: 18px;
+    font-size: 16px;
     font-family: var(--secondary-font);
     font-weight: 600;
     text-transform: uppercase;
