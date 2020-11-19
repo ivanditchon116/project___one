@@ -48,3 +48,16 @@ box6__image.addEventListener("mouseover", () => {
 box6__image.addEventListener("mouseout", () => {
     box6__image.setAttribute("src", "assets/images/norham.jpg");
 });
+
+const toggleMenu = () => {
+    const menu = document.querySelector("#menu");
+    const nav = document.querySelector("#nav");
+
+    menu.addEventListener("click", () => {
+        nav.classList.toggle("nav__active");
+    });
+
+};
+
+toggleMenu();
+
